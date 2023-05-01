@@ -1,0 +1,157 @@
+body {
+  background: #bcdebb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  color: rgb(6, 61, 6);
+}
+
+
+.title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 20px;
+  width: 800px;
+  margin: 0 auto;
+  color: rgb(6, 61, 6);
+  margin-bottom: 20px;
+}
+
+.description__operating-system {
+  text-align: end;
+}
+
+.description__lang {
+  text-align: end;
+  transition: .2s ease-in-out;
+}
+
+.description__lang span {
+  display: inline-block;
+  width: 30px;
+}
+
+textarea#window__input {
+  margin: 0;
+  padding: 0;
+  width: 770px;
+  max-width: 770px;
+  height: 200px;
+}
+
+.keyboard {
+  /* border: 1px solid green;
+  padding: 5px;
+  border-radius: 5px; */
+  white-space: nowrap;
+  width: 830px;
+  background: white;
+  margin: 0 auto;
+  padding: 15px 15px;
+  transition: .2s ease-in-out;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  transition: .2s ease-in-out;
+}
+
+.key {
+  width: 40px;
+  height: 40px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 3px;
+  padding: 4px;
+  text-align: center;
+  line-height: 40px;
+  text-transform: uppercase;
+  transition: .2s ease-in-out;
+}
+
+.line1 .key:nth-child(14) {
+  width: 100px;
+}
+
+.line2 .key:nth-child(1) {
+  width: 60px;
+}
+
+.line3 .key:nth-child(1) {
+  width: 115px;
+}
+
+.line3 .key:nth-child(13) {
+  width: 85px;
+}
+
+.line4 .key:nth-child(1) {
+  width: 120px;
+}
+
+.line4 .key:nth-child(13) {
+  width: 120px;
+}
+
+.line5 .key:nth-child(1) {
+  width: 100px;
+}
+
+.line5 .key:nth-child(6) {
+  width: 100px;
+}
+
+.line5 .key:nth-child(4) {
+  width: 300px;
+}
+
+.line1 .key:nth-child(14),
+.line2 .key:nth-child(1),
+.line2 .key:nth-child(15),
+.line3 .key:nth-child(1),
+.line3 .key:nth-child(13),
+.line4 .key:nth-child(1),
+.line4 .key:nth-child(13),
+.line5 .key:nth-child(1),
+.line5 .key:nth-child(2),
+.line5 .key:nth-child(3),
+.line5 .key:nth-child(5),
+.line5 .key:nth-child(6) {
+  font-size: 10px;
+}
+
+.key:hover {
+  color: #fff;
+  background-color: rgb(49, 49, 196, 0.6);
+  cursor: pointer;
+}
+
+.keydown {
+  color: #fff;
+  background-color: rgb(49, 49, 196);
+  cursor: pointer;
+}
+
+.capsLockActive,
+.shiftActive {
+  color: #fff;
+  background-color: rgb(49, 49, 196)
+}
